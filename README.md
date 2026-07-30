@@ -4,7 +4,7 @@
 
 B-vac is an offline, self-contained pipeline that screens bacterial proteomes for potential vaccine candidates — combining subcellular localization, non-host homology, virulence factor, and epitope mapping analysis in a single user-friendly interface, with no internet connection, command-line use, or advanced bioinformatics expertise required.
 
-🔗 **Live page:** [https://samavinasir.github.io/B-Vac/](https://samavinasir.github.io/B-Vac/)
+🔗 **Get B-vac:** [https://samavinasir.github.io/B-Vac/](https://samavinasir.github.io/B-Vac/)
 
 ## About
 
