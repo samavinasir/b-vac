@@ -10,7 +10,7 @@ B-vac is an offline, self-contained pipeline that screens bacterial proteomes fo
 
 This repository hosts the landing page for B-vac, developed by the **Integrative Biology Laboratory**, Atta-ur-Rahman School of Applied Biosciences (ASAB), National University of Sciences and Technology (NUST), Islamabad, Pakistan.
 
-B-vac applies principles of reverse vaccinology to identify promising bacterial vaccine targets. Users upload a proteome in FASTA format and can apply four adjustable filters — Localization, Non-Host Homologs, Virulence Factors, and Epitope Mapping — using a string-based sequence-matching approach against curated reference datasets (LocTree3, VFDB, and IEDB), and the tool returns filtered candidate proteins along with mapped B-cell and T-cell epitopes.
+B-vac applies principles of reverse vaccinology to identify promising bacterial vaccine targets. Users upload a proteome in FASTA format and can apply four adjustable filters; Localization, Non-Host Homologs, Virulence Factors, and Epitope Mapping. It uses a string-based sequence-matching approach against curated reference datasets (LocTree3, VFDB, and IEDB), and the tool returns filtered candidate proteins along with mapped B-cell and T-cell epitopes.
 
 ## Setup Information
 
