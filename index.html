@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B-vac: A Robust Software Package For Bacterial Vaccine Design</title>
+<meta name="description" content="B-vac — a standalone, offline reverse vaccinology pipeline for identifying bacterial vaccine candidates via localization, non-host homology, virulence factor, and epitope mapping analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b4c;
+    --navy-deep: #0a1440;
+    --orange: #f5821f;
+    --orange-deep: #e06a10;
+    --text-muted: #55607a;
+    --border-soft: rgba(255,255,255,0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  img { max-width: 100%; display: block; }
+
+  /* ===== Header ===== */
+  header.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--navy);
+  }
+
+  .logo img { height: 40px; }
+
+  .header-cta {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    white-space: nowrap;
+  }
+
+  .header-cta:hover { background: var(--navy-deep); }
+
+  /* ===== Hero ===== */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 44px 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .hero-copy { max-width: 760px; text-align: center; }
+
+  .hero-copy h1 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: var(--navy);
+    margin: 0 0 14px;
+    font-weight: 800;
+  }
+
+  .hero-copy p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0 0 22px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    padding: 13px 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+
+  .btn-primary:hover { background: var(--orange-deep); }
+
+  /* ===== Feature modules ===== */
+  .modules-section {
+    padding: 8px 40px 44px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .modules-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .module-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 22px 18px;
+    text-align: center;
+  }
+
+  .module-card .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .module-card h3 {
+    font-size: 1rem;
+    color: var(--navy);
+    margin: 0 0 8px;
+    font-weight: 700;
+  }
+
+  .module-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  /* ===== Setup Information ===== */
+  .setup-section {
+    background: var(--navy);
+    color: #fff;
+    padding: 44px 40px;
+  }
+
+  .setup-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .setup-section h2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 0 0 22px;
+    text-align: center;
+  }
+
+  .setup-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+  }
+
+  .setup-table .cell {
+    padding: 14px 26px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .setup-table .label {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-right: 1px solid var(--border-soft);
+  }
+
+  .setup-table .value .pill {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid var(--border-soft);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
+  .setup-table .cell:nth-last-child(-n+2) { border-bottom: none; }
+
+  .publication-block {
+    margin-top: 36px;
+  }
+
+  .publication-block h2 {
+    text-align: left;
+    font-size: 1.7rem;
+    margin: 0 0 8px;
+  }
+
+  .publication-block p {
+    color: #cfd4e6;
+    font-size: 1rem;
+    margin: 0 0 18px;
+  }
+
+  .pub-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-orange-solid,
+  .btn-orange-outline {
+    padding: 13px 26px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+  }
+
+  .btn-orange-solid {
+    background: var(--orange);
+    color: #fff;
+  }
+
+  .btn-orange-solid:hover { background: var(--orange-deep); }
+
+  .btn-orange-outline {
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    background: transparent;
+  }
+
+  .btn-orange-outline:hover {
+    background: var(--orange);
+    color: #fff;
+  }
+
+  /* ===== Footer ===== */
+  footer.site-footer {
+    text-align: center;
+    padding: 22px 20px;
+    font-size: 0.9rem;
+    color: var(--navy);
+    position: relative;
+  }
+
+  footer.site-footer p {
+    margin: 3px 0;
+  }
+
+  .back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .back-to-top:hover { background: var(--navy-deep); }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 900px) {
+    header.site-header { padding: 12px 20px; }
+    .hero { padding: 32px 20px 28px; }
+    .hero-copy h1 { font-size: 1.9rem; }
+    .modules-section { padding: 4px 20px 32px; }
+    .modules-grid { grid-template-columns: 1fr 1fr; }
+    .setup-section { padding: 32px 20px; }
+    .setup-table { grid-template-columns: 1fr; }
+    .setup-table .label { border-right: none; border-bottom: 1px solid var(--border-soft); }
+  }
+
+  @media (max-width: 560px) {
+    .modules-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo" aria-label="B-vac home">
+    <img src="bvac-logo.png" alt="B-vac logo">
+  </a>
+
+  <a href="https://mgbio.asab.nust.edu.pk/" class="header-cta" target="_blank" rel="noopener noreferrer">Integrative Biology Lab</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>B-vac: A Robust Software Package For Bacterial Vaccine Design</h1>
+      <p>A standalone, offline reverse vaccinology pipeline that screens bacterial proteomes to identify potential vaccine candidates — combining localization, non-host homology, virulence factor, and epitope mapping analysis in one user-friendly interface, with no internet connection or coding required.</p>
+      <a href="https://1drv.ms/u/c/79c060e03e13f069/IQDRFmWBO1-hSaLWhcRLSKAaAVA9tsbZc-KNOg2g77YRtHM?e=vLKdVr" class="btn-primary">Download Now</a>
+    </div>
+  </section>
+
+  <section class="modules-section">
+    <div class="modules-grid">
+      <div class="module-card">
+        <div class="num">1</div>
+        <h3>Localization</h3>
+        <p>Flags surface-exposed and secreted proteins accessible to the host immune system.</p>
+      </div>
+      <div class="module-card">
+        <div class="num">2</div>
+        <h3>Non-Host Homologs</h3>
+        <p>Filters out proteins similar to host sequences to reduce autoimmunity risk.</p>
+      </div>
+      <div class="module-card">
+        <div class="num">3</div>
+        <h3>Virulence Factors</h3>
+        <p>Matches candidates against a curated database of known bacterial virulence factors.</p>
+      </div>
+      <div class="module-card">
+        <div class="num">4</div>
+        <h3>Epitope Mapping</h3>
+        <p>Predicts B-cell and T-cell (CD4+/CD8+) epitopes for immunogenicity assessment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="setup-section">
+    <div class="setup-inner">
+      <h2>Setup Information</h2>
+
+      <div class="setup-table">
+        <div class="cell label">VERSION</div>
+        <div class="cell value"><span class="pill">v1.0</span></div>
+
+        <div class="cell label">CATEGORY</div>
+        <div class="cell value">Reverse vaccinology / bacterial vaccine design</div>
+
+        <div class="cell label">PLATFORM</div>
+        <div class="cell value">Windows &amp; Linux (standalone, Python-based)</div>
+
+        <div class="cell label">INTERNET</div>
+        <div class="cell value">Not Required</div>
+
+        <div class="cell label">LICENSE</div>
+        <div class="cell value">Apache License 2.0</div>
+      </div>
+
+      <div class="publication-block">
+        <h2>B-vac's Publication</h2>
+        <p>Cite B-vac when you use it in your research</p>
+        <div class="pub-buttons">
+          <a href="https://doi.org/10.1038/s41598-025-01201-0" class="btn-orange-solid" target="_blank" rel="noopener noreferrer">Read the Publication</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p><strong>Integrative Biology Laboratory</strong></p>
+  <p>Atta-ur-Rahman School of Applied Biosciences (ASAB), National University of Sciences and Technology (NUST), Islamabad, Pakistan</p>
+</footer>
+
+<a href="#top" class="back-to-top" aria-label="Back to top">&#8593;</a>
+
+</body>
+</html>
