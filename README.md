@@ -1,4 +1,4 @@
-# B-Vac
+# B-vac
 
 **A Standalone Software Package for Reverse-Vaccinology-Based Bacterial Vaccine Design**
 
