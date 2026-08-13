@@ -25,7 +25,7 @@ B-vac applies principles of reverse vaccinology to identify promising bacterial 
 
 ## Download
 
-The latest version of B-vac is available from [mgbio.tech/tools](https://mgbio.tech/tools/).
+The latest version of B-vac is available from [https://samavinasir.github.io/b-vac/](https://samavinasir.github.io/b-vac/)
 
 ## Citation
 
