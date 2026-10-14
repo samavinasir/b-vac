@@ -111,7 +111,6 @@ The results support the identification and prioritization of potential vaccine c
 
 *Note: B-vac is a computational screening tool. Predicted candidates require appropriate downstream validation.*
 
-
 ## Software Information
 
 | Property | Details |
