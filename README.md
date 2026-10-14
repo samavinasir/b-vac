@@ -71,39 +71,7 @@ Designed for researchers, students, and laboratory teams, B-vac transforms a bac
 ## How It Works
 
 <p align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" font-family="Arial, sans-serif">
-    <!-- FASTA Proteome -->
-    <rect x="200" y="20" width="300" height="60" fill="#4A90E2" stroke="#333" rx="12"/>
-    <text x="350" y="55" text-anchor="middle" fill="white" font-size="18" font-weight="bold">FASTA Proteome</text>
-    
-    <!-- Arrow -->
-    <line x1="350" y1="80" x2="350" y2="110" stroke="#333" stroke-width="2"/>
-    <polygon points="345,110 355,110 350,120" fill="#333"/>
-    
-    <!-- Configurable Screening -->
-    <rect x="200" y="130" width="300" height="60" fill="#50E3C2" stroke="#333" rx="12"/>
-    <text x="350" y="165" text-anchor="middle" fill="black" font-size="18" font-weight="bold">Configurable Screening</text>
-    
-    <!-- Arrow -->
-    <line x1="350" y1="190" x2="350" y2="220" stroke="#333" stroke-width="2"/>
-    <polygon points="345,220 355,220 350,230" fill="#333"/>
-    
-    <!-- Screening Details -->
-    <rect x="100" y="240" width="500" height="70" fill="#F5A623" stroke="#333" rx="12"/>
-    <text x="350" y="270" text-anchor="middle" fill="black" font-size="16">
-      Localization · Non-Host Homology · Virulence Factors · Epitope Mapping
-    </text>
-    
-    <!-- Arrow -->
-    <line x1="350" y1="310" x2="350" y2="340" stroke="#333" stroke-width="2"/>
-    <polygon points="345,340 355,340 350,350" fill="#333"/>
-    
-    <!-- Final Output -->
-    <rect x="150" y="360" width="400" height="60" fill="#9013FE" stroke="#333" rx="12"/>
-    <text x="350" y="395" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
-      Filtered Candidate Proteins & Mapped Epitopes
-    </text>
-  </svg>
+  <img src="assets/workflow.svg" width="700" alt="B-vac workflow diagram">
 </p>
 
 B-vac uses a string-based sequence-matching approach against curated reference datasets.  

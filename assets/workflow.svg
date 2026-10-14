@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="500" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="blueGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2F80ED"/>
+      <stop offset="100%" stop-color="#56CCF2"/>
+    </linearGradient>
+    <linearGradient id="tealGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00BFA5"/>
+      <stop offset="100%" stop-color="#4DD0E1"/>
+    </linearGradient>
+    <linearGradient id="orangeGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2994A"/>
+      <stop offset="100%" stop-color="#F6A67F"/>
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8E2DE2"/>
+      <stop offset="100%" stop-color="#9B51E0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Step 1 -->
+  <rect x="200" y="30" width="300" height="60" rx="12" fill="url(#blueGradient)" stroke="#333"/>
+  <text x="350" y="65" text-anchor="middle" fill="white" font-size="18" font-weight="bold">FASTA Proteome</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="90" x2="350" y2="120" stroke="#333" stroke-width="2"/>
+  <polygon points="345,120 355,120 350,130" fill="#333"/>
+
+  <!-- Step 2 -->
+  <rect x="200" y="140" width="300" height="60" rx="12" fill="url(#tealGradient)" stroke="#333"/>
+  <text x="350" y="175" text-anchor="middle" fill="black" font-size="18" font-weight="bold">Configurable Screening</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="200" x2="350" y2="230" stroke="#333" stroke-width="2"/>
+  <polygon points="345,230 355,230 350,240" fill="#333"/>
+
+  <!-- Step 3 -->
+  <rect x="100" y="250" width="500" height="80" rx="12" fill="url(#orangeGradient)" stroke="#333"/>
+  <text x="350" y="280" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
+    Localization · Non-Host Homology
+  </text>
+  <text x="350" y="305" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
+    Virulence Factors · Epitope Mapping
+  </text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="330" x2="350" y2="360" stroke="#333" stroke-width="2"/>
+  <polygon points="345,360 355,360 350,370" fill="#333"/>
+
+  <!-- Step 4 -->
+  <rect x="150" y="380" width="400" height="70" rx="12" fill="url(#purpleGradient)" stroke="#333"/>
+  <text x="350" y="415" text-anchor="middle" fill="white" font-size="16" font-weight="bold">
+    Filtered Candidate Proteins &amp; Mapped Epitopes
+  </text>
+</svg>
