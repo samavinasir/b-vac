@@ -57,8 +57,6 @@ Designed for researchers, students, and laboratory teams, B-vac transforms a bac
 <p align="center">
   <img src="assets/workflow.svg" alt="B-vac workflow diagram" width="100%">
 </p>
-<p align="center"><em>B-vac workflow diagram</em></p>
-
 B-vac uses a string-based sequence-matching approach against curated reference datasets.
 
 The results support the identification and prioritization of potential vaccine candidates for further investigation.
