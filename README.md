@@ -50,7 +50,7 @@ Designed for researchers, students, and laboratory teams, B-vac transforms a bac
 <h2><img src="assets/headings/how-it-works.svg" alt="How It Works" width="100%"></h2>
 
 <p align="center">
-  <img src="assets/b-vac-workflow.svg" alt="B-vac workflow diagram" width="100%">
+  <img src="assets/workflow.png" alt="B-vac workflow diagram" width="100%">
 </p>
 
 B-vac uses a string-based sequence-matching approach against curated reference datasets.
