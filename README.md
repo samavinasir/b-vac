@@ -15,9 +15,9 @@ Screen bacterial proteomes, explore potential vaccine targets, and map epitopes 
 
 **No command line. No internet connection. No advanced bioinformatics expertise required.**
 
-[![Download B-vac](https://img.shields.io/badge/Download%20B--vac%20%E2%86%92-087d83?style=for-the-badge)](https://samavinasir.github.io/b-vac/)
-[![Features](https://img.shields.io/badge/Features-10283d?style=for-the-badge)](#features)
-[![Citation](https://img.shields.io/badge/Citation-10283d?style=for-the-badge)](#publication)
+<a href="https://samavinasir.github.io/b-vac/"><img src="assets/btn/download.svg" alt="Download B-vac" height="40"></a>
+<a href="#features"><img src="assets/btn/features.svg" alt="Features" height="40"></a>
+<a href="#publication"><img src="assets/btn/citation.svg" alt="Citation" height="40"></a>
 
 </div>
 
@@ -25,14 +25,14 @@ Screen bacterial proteomes, explore potential vaccine targets, and map epitopes 
 
 <div align="center">
 
-[![Overview](https://img.shields.io/badge/Overview-087d83?style=flat-square)](#overview)
-[![Features](https://img.shields.io/badge/Features-087d83?style=flat-square)](#features)
-[![How It Works](https://img.shields.io/badge/How%20It%20Works-087d83?style=flat-square)](#how-it-works)
-[![Software Information](https://img.shields.io/badge/Software%20Information-087d83?style=flat-square)](#software-information)
-[![Download](https://img.shields.io/badge/Download-087d83?style=flat-square)](#download)
-[![Publication](https://img.shields.io/badge/Publication-087d83?style=flat-square)](#publication)
-[![Development Team](https://img.shields.io/badge/Development%20Team-087d83?style=flat-square)](#development-team)
-[![License](https://img.shields.io/badge/License-087d83?style=flat-square)](#license)
+<a href="#overview"><img src="assets/btn/overview.svg" alt="Overview" height="40"></a>
+<a href="#features"><img src="assets/btn/features.svg" alt="Features" height="40"></a>
+<a href="#how-it-works"><img src="assets/btn/how.svg" alt="How It Works" height="40"></a>
+<a href="#software-information"><img src="assets/btn/software.svg" alt="Software Information" height="40"></a>
+<a href="#download"><img src="assets/btn/dl.svg" alt="Download" height="40"></a>
+<a href="#publication"><img src="assets/btn/publication.svg" alt="Publication" height="40"></a>
+<a href="#development-team"><img src="assets/btn/team.svg" alt="Development Team" height="40"></a>
+<a href="#license"><img src="assets/btn/license.svg" alt="License" height="40"></a>
 
 </div>
 
