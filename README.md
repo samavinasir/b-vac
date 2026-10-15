@@ -15,13 +15,26 @@ Screen bacterial proteomes, explore potential vaccine targets, and map epitopes 
 
 **No command line. No internet connection. No advanced bioinformatics expertise required.**
 
-[**Download B-vac →**](https://samavinasir.github.io/b-vac/) · [Features](#features) · [Citation](#publication)
+[![Download B-vac](https://img.shields.io/badge/Download%20B--vac%20%E2%86%92-087d83?style=for-the-badge)](https://samavinasir.github.io/b-vac/)
+[![Features](https://img.shields.io/badge/Features-10283d?style=for-the-badge)](#features)
+[![Citation](https://img.shields.io/badge/Citation-10283d?style=for-the-badge)](#publication)
 
 </div>
 
 ---
 
-[Overview](#overview) · [Features](#features) · [How It Works](#how-it-works) · [Software Information](#software-information) · [Download](#download) · [Publication](#publication) · [Development Team](#development-team) · [License](#license)
+<div align="center">
+
+[![Overview](https://img.shields.io/badge/Overview-087d83?style=flat-square)](#overview)
+[![Features](https://img.shields.io/badge/Features-087d83?style=flat-square)](#features)
+[![How It Works](https://img.shields.io/badge/How%20It%20Works-087d83?style=flat-square)](#how-it-works)
+[![Software Information](https://img.shields.io/badge/Software%20Information-087d83?style=flat-square)](#software-information)
+[![Download](https://img.shields.io/badge/Download-087d83?style=flat-square)](#download)
+[![Publication](https://img.shields.io/badge/Publication-087d83?style=flat-square)](#publication)
+[![Development Team](https://img.shields.io/badge/Development%20Team-087d83?style=flat-square)](#development-team)
+[![License](https://img.shields.io/badge/License-087d83?style=flat-square)](#license)
+
+</div>
 
 ---
 
@@ -86,40 +99,16 @@ The results support the identification and prioritization of potential vaccine c
 
 Get the standalone application and access the available release information.
 
-🔗 [samavinasir.github.io/b-vac](https://samavinasir.github.io/b-vac/)
+<div align="center">
 
-[**Download B-vac →**](https://samavinasir.github.io/b-vac/)
+[![Download B-vac](https://img.shields.io/badge/Download%20B--vac%20%E2%86%92-087d83?style=for-the-badge)](https://samavinasir.github.io/b-vac/)
+
+</div>
+
+🔗 [samavinasir.github.io/b-vac](https://samavinasir.github.io/b-vac/)
 
 ---
 
 ## Publication
 
-If you use B-vac in your research, please cite the original publication:
-
-> Ali, A., Hamid, M. H. B., Nasir, S., Ishaq, Z., & Anwer, F. (2025). B-vac: A robust software package for bacterial vaccine design. *Scientific Reports*, **15**, 31745.
-
-**DOI:** [10.1038/s41598-025-01201-0](https://doi.org/10.1038/s41598-025-01201-0)
-
----
-
-## Development Team
-
-Developed by the **Integrative Biology Laboratory**, Atta-ur-Rahman School of Applied Biosciences (ASAB), National University of Sciences and Technology (NUST), Islamabad, Pakistan.
-
-**Laboratory website:** [mgbio.asab.nust.edu.pk](https://mgbio.asab.nust.edu.pk/)
-
----
-
-## License
-
-B-vac is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-
----
-
-<div align="center">
-
-**Built for accessible, data-driven vaccine research.**
-
-B-vac · Reverse Vaccinology · NUST Islamabad
-
-</div>
+If you use B-vac in your
