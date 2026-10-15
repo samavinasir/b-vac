@@ -23,19 +23,6 @@ Screen bacterial proteomes, explore potential vaccine targets, and map epitopes 
 
 ---
 
-<div align="center">
-
-<a href="#overview"><img src="assets/btn/overview.svg" alt="Overview" height="40"></a>
-<a href="#features"><img src="assets/btn/features.svg" alt="Features" height="40"></a>
-<a href="#how-it-works"><img src="assets/btn/how.svg" alt="How It Works" height="40"></a>
-<a href="#software-information"><img src="assets/btn/software.svg" alt="Software Information" height="40"></a>
-<a href="#download"><img src="assets/btn/dl.svg" alt="Download" height="40"></a>
-<a href="#publication"><img src="assets/btn/publication.svg" alt="Publication" height="40"></a>
-<a href="#development-team"><img src="assets/btn/team.svg" alt="Development Team" height="40"></a>
-<a href="#license"><img src="assets/btn/license.svg" alt="License" height="40"></a>
-
-</div>
-
 ---
 
 ## Overview
