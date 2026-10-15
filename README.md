@@ -1,6 +1,6 @@
 <div align="center">
 
-# B-vac
+<img src="bvac-logo.png" alt="B-vac" width="220">
 
 ### Reverse Vaccinology. Simplified.
 
